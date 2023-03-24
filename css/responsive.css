@@ -1,0 +1,135 @@
+/*-------------------------
+------------レスポンシブ --------------
+------------------------------------------------*/
+
+@media screen and (max-width:1080px) {
+  .mainImage-pc {
+    background-image: none;
+  }
+  .header {
+    background-color: #fff;
+  }
+  .globalNav_humbergerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  .globalNav_humbergerLine {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  .globalNav_list {
+    display: none;
+  }
+  .firstView {
+    padding-top: 100px;
+  }
+  .firstView_inner {
+    max-width: 100%;
+  }
+  .mainImage-tablet {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg.webp);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .about_inner {
+    flex-direction: column;
+  }
+  .about_video {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+  .about_textContainer {
+    margin-left: 0;
+    width: 75%;
+  }
+}
+@media screen and (max-width:767px) {
+  .mainImage-tablet {
+    background-image: none;
+  }
+  .mainImage-sp {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header_titleLogo {
+    display: none;
+  }
+  .header_titleLogo-sp {
+    display: block;
+    height: 16px;
+  }
+  .firstView {
+    padding-top: 65vw;
+  }
+  .firstView_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+  .firstView_content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .firstView_title {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .firstView_imagesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .firstView_imageWrapper:first-child,
+  .firstView_imageWrapper:last-child {
+    width: 27.5%;
+  }
+  .firstView_buttonContainer {
+    justify-content: center;
+  }
+  .firstView_ButtonWrapper:first-child {
+    flex-grow: 1;
+    margin-right: 0;
+    text-align: center;
+  }
+  .firstView_buttonWrapper:nth-child(2) {
+    display: none;
+  }
+  .firstView_button {
+    transition: none;
+  }
+  .firstView_button:hover {
+    opacity: 1;
+  }
+  .about {
+    padding: 30px 0;
+  }
+  .about_inner {
+    padding: 0 20px;
+  }
+  .about_video {
+    width: 100%;
+  }
+  .about_textContainer {
+    width: 100%;
+  }
+}

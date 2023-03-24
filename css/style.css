@@ -1,0 +1,236 @@
+/*------------------------------------------
+----------共通------------------
+----------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+   font-size: 14px;
+   font-weight: 500;
+   color: #333;
+   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+/*------------------------------------------
+----------背景画像------------------
+----------------------------------------*/
+.mainImage-pc {
+   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg.webp);
+   background-size: cover;
+   background-position: center;
+}
+/*------------------------------------------
+----------ヘッダー------------------
+----------------------------------------*/
+.header {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.header_inner {
+   padding-left: 36px;
+   padding-right: 36px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.header_titleLink {
+   transition: .2s;
+}
+.header_titleLink:hover {
+   opacity: .8;
+}
+.header_titleLogo {
+   height: 20px;
+}
+.header_titleLogo-sp {
+   display: none;
+}
+/*------------------------------------------
+----------ナビゲーション------------------
+----------------------------------------*/
+.globalNav_humbergerMenu {
+   display: none;
+}
+.globalNav_list {
+   display: flex;
+   align-items: center;
+}
+.globalNav_item {
+   text-align: center;
+  /* flex-shrink: 0;*/
+}
+.globalNav_item:not(:last-child) {
+    margin-right: 45px;
+}
+.glovalNav_link {
+   display: block;
+   font-weight: 700;
+   font-family: 'Lato',sans-serif;
+   color: inherit;
+   line-height: 1.4;
+   text-decoration: none;
+   transition: .2s
+}
+.glovalNav_link:hover {
+   opacity: .8;
+}
+.glovalNav_link > span {
+   font-size: 10px;
+   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.globalNav_button {
+   padding: 14px 20px;
+   border: none;
+   border-radius: 38px;
+   color: white;
+   background-color: #f79214;
+   font-size: 12px;
+   font-weight: 700;
+   text-decoration: none;
+   transition: .2s;
+}
+.globalNav_button:hover {
+   opacity: .8;
+}
+/*------------------------------------------
+----------ファーストビュー------------------
+----------------------------------------*/
+.firstView {
+   padding-top: 20px;
+   padding-bottom: 28px;
+}
+.firstView_inner {
+   width:1140px;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin: 0 auto;
+}
+.firstView_content {
+   width: fit-content;
+   margin-bottom: 70px;
+}
+.firstView_title {
+   font-size: 38px;
+   font-family: 'Lato',sans-serif;
+   font-weight: 700;
+   line-height: 54px;
+   text-align: center;
+   margin-bottom: 15px;
+}
+.firstView_imagesContainer {
+   display: flex;
+   align-items: center;
+   margin-bottom: 25px;
+}
+.firstView_imageWrapper:nth-child(2) {
+   margin-left: 8px;
+   margin-right:8px;
+   width: 40%;
+}
+.firstView_image {
+   width: 100%;
+}
+.firstView_buttonContainer {
+   display: flex;
+   list-style-type: none;
+}
+.firstView_buttonWrapper:first-child {
+   margin-right: 15px;
+   width: 306px;
+}
+.firstView_button {
+   display: block;
+   padding: 26px 40px;
+   border-radius: 38px;
+   color: white;
+   font-size: 16px;
+   font-weight: 700;
+   text-decoration: none;
+   transition: .2s;
+}
+.firstView_button--counseling {
+   background-color: #f79214;
+   color: white;
+   border : none;
+}
+.firstView_button--documentRequest {
+   background-color: #fff;
+   color: #333;
+   border: 1px solid #e0e0e0;
+}
+.firstView_button:hover {
+   opacity: .8;
+}
+.firstView_supplementContainer {
+   list-style-type: none;
+}
+.firstView_supplement {
+   color: #a2a2a4;
+   font-size: 12px;
+   line-height: 1.5;
+}
+/*------------------------------------------
+----------POTEPAN CAMPとは------------------
+----------------------------------------*/
+.about {
+   padding: 44px 0;
+   background-color: #f79214;
+}
+.about_inner {
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 0 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.about_video {
+   width: 50%;
+}
+.about_textContainer {
+   width: 50%;
+   color: #fff;
+   margin-left: 22px;
+}
+.about_title {
+   font-size: 36px;
+   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+   font-weight: 900;
+   letter-spacing: .1em;
+   line-height: 54px;
+   margin-bottom: 22px;
+}
+.about_title span {
+   font-size: 38px;
+   font-family: 'Lato',sans-serif;
+}
+.about_description {
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 26px;
+   margin-bottom: 16px;
+}
+.about_link {
+   font-size: 18px;
+   font-weight: 700;
+   text-decoration: none;
+   color: inherit;
+   background-color: red;
+   background: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/about/arrow-icon.svg) no-repeat;
+   padding-left: 26px;
+}
+/*------------------------------------------
+----------固定ボタン------------------
+----------------------------------------*/
+.fixedButton_link {
+   position: fixed;
+   right: 4px;
+   bottom: 28px
+}
+.fixedButton_image {
+   width:367px;
+}
